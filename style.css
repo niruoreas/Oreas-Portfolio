@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -683,9 +684,50 @@ footer span a:hover{
     /* Add any other necessary styles for screens <= 820px */
   }
   
-  /* Media query for landscape orientation */
-  @media screen and (max-width: 820px) and (orientation: landscape) {
-    .section__pic-containerss{
-      display: none; /* Hide the image container in landscape mode */
+/* Media query for iPhone 12 Pro (390px x 844px) */
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+    /* Adjust your styles here for this specific resolution */
+
+    /* Example: Remove or hide specific elements that may not fit */
+    .section__pic-container {
+        display: none;
     }
-  }
+
+    /* Adjust font sizes and margins for better readability */
+    body {
+        font-size: 14px;
+    }
+
+    .section__pic-containerss {
+        display: none;
+    }
+    .about-content img {
+        display: none;
+    }
+
+    .serv-content, .services, .card {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 844px) and (max-height: 390px) and (orientation: landscape) {
+    /* Adjust your styles here for this specific landscape resolution */
+
+    /* Example: Remove or hide specific elements that may not fit */
+    .section__pic-container {
+        display: none;
+    }
+
+    /* Adjust font sizes and margins for better readability */
+    body {
+        font-size: 14px;
+    }
+
+    .section__pic-containerss {
+        display: none;
+    }
+
+    .serv-content, .services, .card {
+        font-size: 10px;
+    }
+}
